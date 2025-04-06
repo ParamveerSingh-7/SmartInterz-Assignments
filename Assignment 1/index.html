@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Assignment</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-color: #6c63ff;
+        --secondary-color: #4caf50;
+        --text-color: #2d3436;
+        --light-gray: #f5f6fa;
+        --white: #ffffff;
+        --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        background-color: var(--light-gray);
+        color: var(--text-color);
+        line-height: 1.6;
+      }
+
+      h1 {
+        text-align: center;
+        color: var(--primary-color);
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        font-weight: 600;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .content-section {
+        background-color: var(--white);
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        margin-bottom: 2rem;
+        transition: transform 0.3s ease;
+      }
+
+      .content-section:hover {
+        transform: translateY(-5px);
+      }
+
+      p {
+        font-family: "Poppins", sans-serif;
+        line-height: 1.8;
+        text-align: justify;
+        margin-bottom: 1.5rem;
+        color: #555;
+      }
+
+      .image-container {
+        text-align: center;
+        margin: 2rem 0;
+        background-color: var(--white);
+        padding: 1rem;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+      }
+
+      .image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+      }
+
+      .image-container img:hover {
+        transform: scale(1.02);
+      }
+
+      .image-container figcaption {
+        font-style: italic;
+        margin-top: 1rem;
+        color: #666;
+      }
+
+      .styled-button {
+        display: block;
+        margin: 2rem auto;
+        padding: 1rem 2rem;
+        background-color: var(--primary-color);
+        color: var(--white);
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: var(--shadow);
+      }
+
+      .styled-button:hover {
+        background-color: #5a52d4;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        margin: 2rem 0;
+        background-color: var(--white);
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+      }
+
+      th,
+      td {
+        padding: 1rem;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+      }
+
+      th {
+        background-color: var(--primary-color);
+        color: var(--white);
+        font-weight: 500;
+      }
+
+      tr:last-child td {
+        border-bottom: none;
+      }
+
+      tr:hover td {
+        background-color: rgba(108, 99, 255, 0.05);
+      }
+
+      .form-container {
+        background-color: var(--white);
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        margin: 2rem 0;
+      }
+
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: var(--text-color);
+        font-weight: 500;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+        padding: 0.8rem;
+        border: 2px solid #eee;
+        border-radius: 8px;
+        font-family: "Poppins", sans-serif;
+        transition: all 0.3s ease;
+      }
+
+      input[type="text"]:focus,
+      input[type="email"]:focus {
+        outline: none;
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.1);
+      }
+
+      input[type="submit"] {
+        background-color: var(--primary-color);
+        color: var(--white);
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: var(--shadow);
+      }
+
+      input[type="submit"]:hover {
+        background-color: #5a52d4;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content-section">
+      <h1>Welcome to My Webpage</h1>
+
+      <p>
+        This is the first paragraph of my webpage. It demonstrates the use of
+        different font family, line height, and text alignment as specified in
+        the requirements.
+      </p>
+
+      <p>
+        This is the second paragraph. It also showcases the styling properties
+        we've applied to all paragraphs, including the justified text alignment,
+        increased line height, and the Georgia font family.
+      </p>
+    </div>
+
+    <figure class="image-container">
+      <img src="https://via.placeholder.com/600x400" alt="Placeholder Image" />
+      <figcaption>This is a caption for the image above</figcaption>
+    </figure>
+
+    <button class="styled-button">Click Me!</button>
+
+    <div class="content-section">
+      <table>
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+          <th>Header 3</th>
+        </tr>
+        <tr>
+          <td>Row 1, Cell 1</td>
+          <td>Row 1, Cell 2</td>
+          <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 2, Cell 1</td>
+          <td>Row 2, Cell 2</td>
+          <td>Row 2, Cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 3, Cell 1</td>
+          <td>Row 3, Cell 2</td>
+          <td>Row 3, Cell 3</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="form-container">
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
