@@ -1,12 +1,68 @@
-# React + Vite
+# E-commerce Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend part of a full-stack e-commerce application built with React and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive design
+- Product listing and details
+- Shopping cart functionality
+- User authentication
+- Modern UI with Tailwind CSS
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── Footer.jsx
+│   ├── ProductCard.jsx
+│   └── ...
+├── pages/
+│   ├── Home.jsx
+│   ├── ProductDetails.jsx
+│   └── ...
+├── context/
+│   └── CartContext.jsx
+├── App.jsx
+└── main.jsx
+```
+
+## Setup
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## Technologies Used
+
+- React.js
+- Tailwind CSS
+- React Router
+- Context API
+- JavaScript (ES6+)
+
+## Features in Detail
+
+- **Navigation**: Responsive navbar with mobile menu
+- **Product Display**: Grid layout with product cards
+- **Product Details**: Detailed view of individual products
+- **Shopping Cart**: Add/remove items, quantity management
+- **User Authentication**: Login/Register functionality
+- **Responsive Design**: Works on all device sizes
+
+## Learning Outcomes
+
+- Full-stack application development
+- React with Tailwind CSS
+- State management with Context API
+- RESTful API integration
+- Responsive web design
+- Modern UI/UX principles
